@@ -12,5 +12,6 @@ void setup(){
 void draw(){
   clear();
   for (Ball b : balls)
-    b.move();
+    b.update();
+    
 }
