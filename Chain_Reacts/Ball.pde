@@ -57,7 +57,7 @@ class Ball {
   }
   
   boolean touches( Ball other ){
-    return Math.sqrt( Math.pow(other.x-x, 2) + Math.pow(other.y-y, 2) ) 
-           <= r + other.r;
+    return Math.pow(other.x-x, 2) + Math.pow(other.y-y, 2)
+           <= Math.pow(r + other.r, 2);
   }
 }
